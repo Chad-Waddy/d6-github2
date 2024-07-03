@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head><!-- (  /*  */ css comments )-->
+<head><!-- (  /*  */ css comments $=done )-->
 <style>
-div {
+div { 
   border: 1px solid black;
+  border-radius: 10px;
   background-color: whitesmoke;
+  /*border-shadow: 25px ;*/
   padding-top: 50px;
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
 }
+.spacecadet { /* top div needs center, green border to show the begining and end of the box $ */
 
+
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px
+
+
+}
+input {
+  border-radius: 5px;
+  border: 2px solid #bbc9c7;
+  padding: 10px; 
+  width: 150px;
+  height: 15px;  
+}
 .h2 {
 
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    width: 300px;
+  font-family: "-apple-system,BlinkMacSystemFont","Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    
   margin: auto;
   text-align: center;
+  border: none;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
 main {
     width: 300px;
@@ -24,14 +46,18 @@ main {
 }
 form {
 /* rounded borders*/
-/*border*/
-border-radius: 5px;
+
+/*border$*/
+border-radius: 10px;
+box-shadow: 25px !important;
 
 }
 footer {
+  /* center footer*/
+  margin:center, 20px;
     margin-bottom: 200px;
 	padding: 20px;
-	background: rgb(221, 225, 203);
+	background: rgb(246, 247, 243);
 /* margin-top: auto;/* /*another magical line*/ 
 }
 
@@ -166,33 +192,35 @@ footer {
 <body>
   
 <main>
-    <h2 class="h2"> Sign in to git hub </h2>
-
+  <div1>
+    <h class="h2" id="spacecadet"> Sign in to git hub </h>
+  </div1>
         <div>
-            <label for="login_field"> <!-- this is the tp login bar -->
+            <label for="Username"> <!-- this is the tp login bar -->
                 Username or email address
               </label>
-            <input type="text" name="login" class="form"  >
+            <input type="text" name="login" class="form" id="username" >
         <!-- this is the password section  -->
             <label for="password">
             Password
           </label>
+          <a href="" style="font-size: smaller;padding-right: 20px;"> Forgot password</a>
         <input type="password" name="password" id="password" class="" >
         <button class="button-17">--- sign-in ---</button>  
       </div>
         
 </main>
-
+<div class="">
         <footer> 
             <nav>
               <button class="button-8" role="button">
-                Legal</button>
+                Legal</button</a>
                 ,<button>
                 <a class="button-17">Terms of use</a></button>
                 <a class="">Privacy policy</a>
                 <a class="">Cookie policy</a>
               </nav>
-            
+            </div>
 
 
         </footer>
