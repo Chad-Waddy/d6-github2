@@ -3,13 +3,50 @@
 <html>
     <Head>
     <Style>
+        .check-cut {
+            border: 10 px rgb(76, 192, 41);
+            /*, rgb(29, 170, 221), rgb(221, 102, 38));
+*/           border-radius: 10px;
+                background-color: rgb(224, 37, 37);
+
+        }
+        .check-cut2{
+            border: 1px rgb(77, 66, 66);
+            background-color: rgb(100, 80, 232);
+            border-radius: 10px;
+            border-width: 200px;
 
 
+        }
+        #spacecadet { /*$ top div needs center, green border to show the begining and end of the box $
+            # for spacers and dimentions <.> for color changes  */
+            
+
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+            text-align:center;
+          
+        }
+
+        #center{
+            margin-top: 25px;
+            text-align: right;
+            padding-left: 25px;
 
 
+        }
+        .color2 {
+    border: 1px solid #b7d5f2 !important;
+    background-color: #32383f !important;
+    color: #ffffff !important;
+}
+    .text1{
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: oblique;
 
-
-
+    }
 
 
 
@@ -23,14 +60,14 @@
     </Head>
     <Body>
 
-<title id=" " class="spacecadet">
+    <title id="text1" class="">
     this is my title for the pagee 
     </title>
-    <h2 class="spacecadet" id=""  > This is my main page let me see how big it is  </h2>
+    <h2 class="spacecadet" id="text1"  > This is my main page let me see how big it is  </h2>
         <nav>
 
         <li>
-            <ul a href="  " id="" class="">
+            <ul a href="  " id="" class="text1">
                 tab 1
             </ul>
             <ul>
@@ -42,17 +79,19 @@
         </li>
 
     </nav>
-
-    <article>
+    <div class="color2" id="">
+        <article>
         this is the first paragraph
 
-    </article>
-    <article>
+        </article>
+    </div>
+    <div>
+    <article class="check-cut2" id="center">
             This is the second(maybe 3rd depending how it shapes)
 
     </article>
-
-    <aside>
+    </div>
+    <aside class="text1" id="spacecadet">
         this is the third (second depending how the structure is )
 
     </aside>
