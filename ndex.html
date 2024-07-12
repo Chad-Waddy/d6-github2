@@ -3,6 +3,10 @@
 <html>
     <Head>
     <Style>
+        li { 
+text-align: center;
+font font-family: Arial, Helvetica, sans-serif; ;
+        }
         .check-cut {
             border: 10 px rgb(76, 192, 41);
             /*, rgb(29, 170, 221), rgb(221, 102, 38));
@@ -26,6 +30,17 @@
             padding-bottom: 50px;
             padding-left: 80px;
             text-align:center;
+          
+        }
+        #spacecadet2 { /*$ top div needs center, green border to show the begining and end of the box $
+            # for spacers and dimentions <.> for color changes  */
+            
+
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+            text-align:left;
           
         }
 
@@ -59,17 +74,17 @@
 ========================
 */
 
- body {width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
+    body {width: 100%;
+     height: 100%;
+     overflow: hidden;
+     margin: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
 
-div[class*=box] {
+    div[class*=box] {
 	height: 33.33%;
 	width: 33.33%; 
   display: flex;
@@ -77,30 +92,30 @@ div[class*=box] {
   align-items: center;
 }
 
-.box-1 { background-color: #FF6766; }
+    .box-1 { background-color: #FF6766; }
 .box-2 { background-color: #3C3C3C; }
-.box-3 { background-color: #66A182; }
+    .box-3 { background-color: #66A182; }
 
-.btn {
+    .btn {
 	line-height: 50px;
-	height: 50px;
+	height: 100px;
 	text-align: center;
 	width: 250px;
 	cursor: pointer;
 }
-.btn-two {
+    .btn-two {
 	color: #FFF;
 	transition: all 0.5s;
 	position: relative;	
 }
-.btn-two span {
+    .btn-two span {
 	z-index: 2;	
 	display: block;
 	position: absolute;
 	width: 100%;
 	height: 100%;	
 }
-.btn-two::before {
+    .btn-two::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -112,7 +127,7 @@ div[class*=box] {
 	border: 1px solid rgba(255,255,255,0.2);
 	background-color: rgba(255,255,255,0.1);
 }
-.btn-two::after {
+    .btn-two::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -124,14 +139,14 @@ div[class*=box] {
 	border: 1px solid rgba(255,255,255,0.2);
 	background-color: rgba(255,255,255,0.1);
 }
-.btn-two:hover::before {
+    .btn-two:hover::before {
   transform: rotate(-45deg);
   background-color: rgba(255,255,255,0);
 }
-.btn-two:hover::after {
+    .btn-two:hover::after {
   transform: rotate(45deg);
   background-color: rgba(255,255,255,0);
-}
+    }
 
 
     </Style>
@@ -142,7 +157,7 @@ div[class*=box] {
 
 
     </Head>
-    <Body>
+    <Body style="background-color: grey;" >
 
     <title id="text1" class="">
     this is my title for the pagee 
@@ -151,32 +166,143 @@ div[class*=box] {
         <nav>
 
         <li>
-            <ul a href="  " id="" class="text1">
+            <ol a href="  " id="" class="text1">
                 tab 1
-            </ul>
-            <ul>
+            </ol> 
+            <ol>
                 tab 2
-            </ul>
+            </ol>
             <ul>
                 tab 3
             </ul>
         </li>
        
     </nav>
-    <div class="color2" id="spacecadet">
+    <div class="color2" id="spacecadet2">
         <article>
-        this is the first paragraph
+        this is the first paragraph ( the bee movie scripts )       
+
+        According to all known laws
+of aviation,
+there is no way a bee
+should be able to fly.
+Its wings are too small to get
+its fat little body off the ground.
+The bee, of course, flies anyway
+because bees don't care
+what humans think is impossible.
+Yellow, black. Yellow, black.
+Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+Barry! Breakfast is ready!
+Ooming!
+Hang on a second.
+Hello?
+- Barry?
+- Adam?
+- Oan you believe this is happening?
+- I can't. I'll pick you up.
+Looking sharp.
+Use the stairs. Your father
+paid good money for those.
+Sorry. I'm excited.
+Here's the graduate.
+We're very proud of you, son.
+A perfect report card, all B's.
+Very proud.
+Ma! I got a thing going here.
+- You got lint on your fuzz.
+- Ow! That's me!
+- Wave to us! We'll be in row 118,000.
+- Bye!
+Barry, I told you,
+stop flying in the house!
+- Hey, Adam.
+- Hey, Barry.
+- Is that fuzz gel?
+- A little. Special day, graduation.
+Never thought I'd make it.
+Three days grade school,
+three days high school.
+Those were awkward.
+Three days college. I'm glad I took
+a day and hitchhiked around the hive.
+You did come back different.
+- Hi, Barry.
+- Artie, growing a mustache? Looks good.
+- Hear about Frankie?
+- Yeah.
+- You going to the funeral?
+- No, I'm not going.
+
 
         </article>
     </div>
+    <a href="C:\Users\MSIMBO\d6.2-github\index.html">
     <div class="box-2">
-        <div class="btn btn-two">
-          <span>HOVER ME</span>
+        <div class="btn btn-two" >
+          <span>SIGN_IN</span>
         </div>
+        </a>
       </div>
     <div>
         <article class="check-cut2" id="center">
-            This is the second(maybe 3rd depending how it shapes)
+            This is the second(maybe 3rd depending how it shapes)                  
+            (bee movie script )   According to all known laws
+            of aviation,
+            there is no way a bee
+            should be able to fly.
+            Its wings are too small to get
+            its fat little body off the ground.
+            The bee, of course, flies anyway
+            because bees don't care
+            what humans think is impossible.
+            Yellow, black. Yellow, black.
+            Yellow, black. Yellow, black.
+            Ooh, black and yellow!
+            Let's shake it up a little.
+            Barry! Breakfast is ready!
+            Ooming!
+            Hang on a second.
+            Hello?
+            - Barry?
+            - Adam?
+            - Oan you believe this is happening?
+            - I can't. I'll pick you up.
+            Looking sharp.
+            Use the stairs. Your father
+            paid good money for those.
+            Sorry. I'm excited.
+            Here's the graduate.
+            We're very proud of you, son.
+            A perfect report card, all B's.
+            Very proud.
+            Ma! I got a thing going here.
+            - You got lint on your fuzz.
+            - Ow! That's me!
+            - Wave to us! We'll be in row 118,000.
+            - Bye!
+            Barry, I told you,
+            stop flying in the house!
+            - Hey, Adam.
+            - Hey, Barry.
+            - Is that fuzz gel?
+            - A little. Special day, graduation.
+            Never thought I'd make it.
+            Three days grade school,
+            three days high school.
+            Those were awkward.
+            Three days college. I'm glad I took
+            a day and hitchhiked around the hive.
+            You did come back different.
+            - Hi, Barry.
+            - Artie, growing a mustache? Looks good.
+            - Hear about Frankie?
+            - Yeah.
+            - You going to the funeral?
+            - No, I'm not going.
+            
             <img src="github.jpg" alt="Italian Trulli">
         </article>
 
